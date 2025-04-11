@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "regions": ["fra1"],
+  "builds": [
+    {
+      "src": "public/webflow/**",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/public/webflow/$1"
+    }
+  ]
+} 
